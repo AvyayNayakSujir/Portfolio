@@ -1,6 +1,6 @@
 'use client';
 
-import MatrixText from '@/components/MatrixText';
+import TypingEffect from '@/components/TypingEffect';
 import Fireflies from '@/components/Fireflies';
 import { useEffect, useState } from 'react';
 
@@ -23,34 +23,36 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f12_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f12_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
         
         <div className={`relative z-10 transition-all duration-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          {/* Matrix reveal hello message */}
+          {/* Typing Effect reveals hello message */}
           <div className="mb-6 overflow-hidden">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-              <MatrixText 
-                text="Hello, I'm" 
+              <TypingEffect 
+                texts={["Hello,"]}
                 className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 block"
                 delay={300}
+                typingSpeed={100}
+                pauseBetween={500}
               />
-              <MatrixText 
-                text="Avyay" 
-                className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 block mt-2"
-                delay={800}
+              <TypingEffect 
+                texts={["I'm Avyay."]}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 block mt-2"
+                delay={1300}
+                typingSpeed={100}
+                pauseBetween={500}
               />
             </h1>
           </div>
 
           {/* Description */}
-          <div className={`space-y-4 max-w-2xl transition-all duration-1000 delay-1000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <div className={`space-y-4 max-w-2xl transition-all duration-1000 delay-2800 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-300 leading-relaxed">
-              A passionate{' '}
-              <span className="text-emerald-400 font-semibold">developer</span>{' '}
-              crafting beautiful digital experiences with modern technologies.
+              A{' '}
+              <span className="text-emerald-400 font-semibold">Full Stack Developer</span>{' '}
+              who’s passionate about engineering scalable systems and automating solutions.
             </p>
             
             <p className="text-base sm:text-lg text-zinc-400 leading-relaxed">
-              I specialize in building responsive web applications, elegant user interfaces, 
-              and scalable solutions. With a keen eye for design and a love for clean code, 
-              I transform ideas into reality.
+              B.Tech in Information Science & Engineering at NMAM Institute of Technology
             </p>
 
             {/* CTA Buttons */}
