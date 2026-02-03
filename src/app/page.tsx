@@ -2,6 +2,7 @@
 
 import TypingEffect from '@/components/TypingEffect';
 import Fireflies from '@/components/Fireflies';
+import Timeline from '@/components/Timeline';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -13,8 +14,14 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
+  const scrollToExperience = () => {
+    const element = document.getElementById('experience-section');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans overflow-hidden">
+    <>
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans">
       {/* Interactive Fireflies Background */}
       <Fireflies />
       {/* Fixed Social Icons - Bottom Left - Hidden on Mobile */}
@@ -183,8 +190,11 @@ export default function Home() {
             </div>
             {/* CTA Buttons */}
             <div className="flex flex-row gap-4 pt-6">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/50">
-                <span className="relative z-10">View My Work</span>
+              <button 
+                onClick={scrollToExperience}
+                className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/50"
+              >
+                <span className="relative z-10">Work & Experience</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
               
@@ -204,5 +214,10 @@ export default function Home() {
         </div>
       </main>
     </div>
+    {/* Experience Timeline Section */}
+    <div className="scroll-mt-20">
+      <Timeline />
+    </div>
+    </>
   );
 }
