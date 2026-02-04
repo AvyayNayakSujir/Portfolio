@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfolio | Avyay Nayak Sujir",
   description: "A Full-Stack Developer specializing in modern web applications and elegant UI/UX designs.",
+  
 };
 
 export default function RootLayout({

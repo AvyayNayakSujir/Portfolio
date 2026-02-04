@@ -22,7 +22,7 @@ const education: EducationItem[] = [
     institution: "NMAM Institute of Technology",
     degree: "Bachelor of Technology",
     field: "Information Science & Engineering",
-    timeline: "2026 - Present",
+    timeline: "2026",
     gpa: "8.8/10",
   },
 ];

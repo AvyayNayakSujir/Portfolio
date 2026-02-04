@@ -5,6 +5,7 @@ import Fireflies from '@/components/Fireflies';
 import Timeline from '@/components/Timeline';
 import Education from '@/components/Education';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -230,6 +231,9 @@ export default function Home() {
     <div className="scroll-mt-20">
       <Education />
     </div>
+
+    {/* Contact Section */}
+    <Contact />
     </>
   );
 }
