@@ -3,6 +3,8 @@
 import TypingEffect from '@/components/TypingEffect';
 import Fireflies from '@/components/Fireflies';
 import Timeline from '@/components/Timeline';
+import Education from '@/components/Education';
+import Projects from '@/components/Projects';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -217,6 +219,16 @@ export default function Home() {
     {/* Experience Timeline Section */}
     <div className="scroll-mt-20">
       <Timeline />
+    </div>
+    
+    {/* Projects Section */}
+    <div className="scroll-mt-20">
+      <Projects />
+    </div>
+
+    {/* Education Section */}
+    <div className="scroll-mt-20">
+      <Education />
     </div>
     </>
   );
