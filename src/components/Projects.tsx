@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "Xtract: Data Visualization Tool",
     description:
       "A web application that can be used to extract statistical summaries along with graphical visualizations from datasets, delivering actionable insights.",
-    techStack: ["HTML", "Tailwind CSS", "JavaScript", "Node.js"],
+    techStack: ["HTML", "Tailwind CSS", "JavaScript", "Node.js", "Python"],
     githubUrl: "https://github.com/AvyayNayakSujir/Xtract",
   },
   {
