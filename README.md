@@ -1,1 +1,1 @@
-Check out my portfolio [here](https://avyaynayaksujir.vercel.app/).
+Check out my portfolio [here](https://avyaynayaksujir.me).
