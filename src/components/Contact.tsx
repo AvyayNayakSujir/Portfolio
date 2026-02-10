@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <section
       id="contact-section"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 py-20 px-6 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center py-20 px-6 overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f12_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f12_1px,transparent_1px)] bg-[size:14px_24px]" />

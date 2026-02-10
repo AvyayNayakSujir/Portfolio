@@ -70,7 +70,7 @@ export default function Projects() {
   return (
     <div
       id="projects-section"
-      className="min-h-screen bg-gradient-to-tl from-zinc-950 via-zinc-900 to-zinc-950 py-20 px-6 sm:px-12 transition-all duration-500"
+      className="min-h-screen py-20 px-6 sm:px-12 transition-all duration-500"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
