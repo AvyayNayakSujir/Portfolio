@@ -10,11 +10,20 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
+  const [showSnow, setShowSnow] = useState(false);
 
   useEffect(() => {
     // Trigger content fade-in after a brief delay
     const timer = setTimeout(() => setShowContent(true), 100);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia('(min-width: 1024px) and (pointer: fine)');
+    const handleChange = () => setShowSnow(media.matches);
+    handleChange();
+    media.addEventListener('change', handleChange);
+    return () => media.removeEventListener('change', handleChange);
   }, []);
 
   const scrollToExperience = () => {
@@ -26,25 +35,27 @@ export default function Home() {
     <>
       <div className="relative z-10 flex min-h-screen items-center justify-center font-sans">
         {/* Interactive pixel snow-fall Background */}
-        <div
-          className="fixed inset-0 z-0 pointer-events-none"
-          aria-hidden="true"
-        >
-          <PixelSnow
-            color="#ffffff"
-            flakeSize={0.01}
-            minFlakeSize={1.25}
-            pixelResolution={500}
-            speed={1.5}
-            density={0.05}
-            direction={125}
-            brightness={1}
-            depthFade={8}
-            farPlane={20}
-            gamma={0.4545}
-            variant="square"
-          />
-        </div>
+        {showSnow && (
+          <div
+            className="fixed inset-0 z-0 pointer-events-none"
+            aria-hidden="true"
+          >
+            <PixelSnow
+              color="#ffffff"
+              flakeSize={0.01}
+              minFlakeSize={1.25}
+              pixelResolution={500}
+              speed={1.5}
+              density={0.05}
+              direction={125}
+              brightness={1}
+              depthFade={8}
+              farPlane={20}
+              gamma={0.4545}
+              variant="square"
+            />
+          </div>
+        )}
 
         {/* Fixed Social Icons - Bottom Left - Hidden on Mobile */}
         <div
