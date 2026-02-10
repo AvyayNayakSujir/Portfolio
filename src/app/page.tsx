@@ -45,8 +45,8 @@ export default function Home() {
               flakeSize={0.01}
               minFlakeSize={1.25}
               pixelResolution={500}
-              speed={1.5}
-              density={0.05}
+              speed={3}
+              density={0.1}
               direction={125}
               brightness={1}
               depthFade={8}
