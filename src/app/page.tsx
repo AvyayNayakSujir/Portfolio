@@ -1,7 +1,7 @@
 'use client';
 
 import TypingEffect from '@/components/TypingEffect';
-import Fireflies from '@/components/Fireflies';
+import SoftSpotlight from '@/components/SoftSpotlight';
 import Timeline from '@/components/Timeline';
 import Education from '@/components/Education';
 import Projects from '@/components/Projects';
@@ -24,9 +24,9 @@ export default function Home() {
 
   return (
     <>
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 font-sans">
-      {/* Interactive Fireflies Background */}
-      <Fireflies />
+    <div className="flex min-h-screen items-center justify-center font-sans">
+      {/* Soft Spotlight Background */}
+      <SoftSpotlight />
       {/* Fixed Social Icons - Bottom Left - Hidden on Mobile */}
       <div className={`hidden md:flex fixed left-8 bottom-8 z-20 transition-all duration-1000 delay-700 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
         <div className="flex flex-col gap-5 items-center">
@@ -90,7 +90,7 @@ export default function Home() {
           </a>
 
           {/* Vertical Line Decoration */}
-          <div className="w-[1px] h-20 bg-gradient-to-b from-zinc-700 to-transparent"></div>
+          <div className="w-px h-20 bg-linear-to-b from-zinc-700 to-transparent"></div>
         </div>
       </div>
       

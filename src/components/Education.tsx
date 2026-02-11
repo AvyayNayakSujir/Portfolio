@@ -64,7 +64,7 @@ export default function Education() {
   return (
     <div
       id="education-section"
-      className="min-h-screen bg-gradient-to-bl from-zinc-950 via-zinc-900 to-zinc-950 py-20 px-6 sm:px-12 transition-all duration-500"
+      className="min-h-screen py-20 px-6 sm:px-12 transition-all duration-500"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
