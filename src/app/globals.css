@@ -28,3 +28,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.soft-spotlight {
+  position: absolute;
+  inset: -20%;
+  --spot-1-x: 30%;
+  --spot-1-y: 20%;
+  --spot-2-x: 70%;
+  --spot-2-y: 65%;
+  --spot-3-x: 42%;
+  --spot-3-y: 72%;
+  --spot-4-x: 78%;
+  --spot-4-y: 32%;
+  background:
+    radial-gradient(360px 360px at var(--spot-1-x) var(--spot-1-y), rgba(16, 185, 129, 0.18), transparent 62%),
+    radial-gradient(320px 320px at var(--spot-2-x) var(--spot-2-y), rgba(20, 184, 166, 0.16), transparent 64%),
+    radial-gradient(300px 300px at var(--spot-3-x) var(--spot-3-y), rgba(34, 197, 94, 0.14), transparent 64%),
+    radial-gradient(280px 280px at var(--spot-4-x) var(--spot-4-y), rgba(45, 212, 191, 0.14), transparent 66%);
+  filter: blur(10px);
+}
