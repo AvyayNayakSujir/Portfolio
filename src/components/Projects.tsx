@@ -39,7 +39,7 @@ const projects: Project[] = [
       "A modern, responsive portfolio website built with Next.js and TypeScript, featuring smooth animations and an elegant dark theme.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     githubUrl: "https://github.com/AvyayNayakSujir/Portfolio",
-    liveUrl: "https://portfolio-opd31xtg0-avyaynayaks-projects.vercel.app",
+    liveUrl: "https://www.avyaynayaksujir.me",
   },
 ];
 
