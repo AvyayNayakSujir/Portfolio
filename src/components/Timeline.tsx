@@ -8,6 +8,7 @@ interface Experience {
   timeline: string;
   contributions: string;
   techStack: string[];
+  certificate?: string;
 }
 
 const experiences: Experience[] = [
@@ -18,6 +19,7 @@ const experiences: Experience[] = [
     contributions:
       "Worked on an analytical application that tracks production across various pallet manufacturing facilities. I fixed various critical UX bugs, API issues and data inconsistencies, improving reliability. Beyond maintenance, I took ownership of several key upgrades: I refactored the legacy authentication system to a more secure SSO solution and automated daily production digests and hardware monitoring using cron jobs. I also refactored the webhook integrations to ensure that the data flows align perfectly with the requirements of the partners. By rethinking the backend logic, I decoupled asynchronous processes to prevent blocking, bringing configuration save times down from ~17s to under 1s. I also developed and refactored various SQL functions to improve data quality and retrieval speeds across the platform.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Ant Design", "Supabase", "Clerk", "Vercel"],
+    certificate: "https://drive.google.com/file/d/18gMRxz1vNTvph1VsP9tT3o4PY_4_t9Cl/view?usp=sharing",
   },
   {
     company: "Shiransh Ventures Pvt. Ltd.",
@@ -26,6 +28,7 @@ const experiences: Experience[] = [
     contributions:
       "Built a web platform for Ishna Playschool under Shiransh Ventures Pvt. Ltd. to modernize their information delivery and enrollment systems. I took full ownership of the project, engineering a structured interface to communicate the school's mission while automating their manual inquiry and admission workflows, following the agile methodology during the development process. My focus was on transforming a traditional administrative process into a streamlined digital experience that simplified operations for both the staff and parents.",
     techStack: ["React.js", "TypeScript", "Tailwind CSS", "Firebase","Git"],
+    certificate: "https://drive.google.com/file/d/1I64tY8fj2xN9fcgW44e98N0BBNFq_Rsy/view?usp=sharing",
   },
 ];
 
@@ -184,6 +187,31 @@ function ExperienceCard({ experience, align }: ExperienceCardProps) {
 
       {/* Contributions */}
       <ul className={`space-y-2`}>{experience.contributions}</ul>
+
+      {/* Certificate Button */}
+      {experience.certificate && (
+        <a
+          href={experience.certificate}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/30"
+        >
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+          View Certificate
+        </a>
+      )}
 
       {/* Tech Stack */}
       <div className="mt-4 pt-4 border-t border-zinc-700/50">
