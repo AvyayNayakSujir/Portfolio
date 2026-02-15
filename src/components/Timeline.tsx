@@ -24,7 +24,7 @@ const experiences: Experience[] = [
   {
     company: "Shiransh Ventures Pvt. Ltd.",
     role: "Web Developer Intern",
-    timeline: "Jun 2025 - Aug 2025",
+    timeline: "May 2025 - Aug 2025",
     contributions:
       "Built a web platform for Ishna Playschool under Shiransh Ventures Pvt. Ltd. to modernize their information delivery and enrollment systems. I took full ownership of the project, engineering a structured interface to communicate the school's mission while automating their manual inquiry and admission workflows, following the agile methodology during the development process. My focus was on transforming a traditional administrative process into a streamlined digital experience that simplified operations for both the staff and parents.",
     techStack: ["React.js", "TypeScript", "Tailwind CSS", "Firebase","Git"],
