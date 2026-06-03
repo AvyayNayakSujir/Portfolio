@@ -202,7 +202,7 @@ export default function Home() {
               </button>
               
                 <a 
-                href="https://drive.google.com/file/d/16YUtpoA9MvHwbWi0g6A0wZxp0zZNeRBn/view?usp=sharing" 
+                href="https://drive.google.com/file/d/12_gXrbxD_9_Bwh-vcOW0dOK9Zf2ktNG0/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-8 py-4 border-2 border-emerald-400/50 text-emerald-400 font-semibold rounded-lg transition-all duration-300 hover:bg-emerald-400/10 hover:border-emerald-400 hover:scale-105 flex items-center gap-2"
