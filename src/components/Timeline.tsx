@@ -17,7 +17,8 @@ const experiences: Experience[] = [
     role: "Software Developer Intern",
     timeline: "Sept 2025 - Dec 2025",
     contributions:
-      "Worked on an analytical application that tracks production across various pallet manufacturing facilities. I fixed various critical UX bugs, API issues and data inconsistencies, improving reliability. Beyond maintenance, I took ownership of several key upgrades: I refactored the legacy authentication system to a more secure SSO solution and automated daily production digests and hardware monitoring using cron jobs. I also refactored the webhook integrations to ensure that the data flows align perfectly with the requirements of the partners. By rethinking the backend logic, I decoupled asynchronous processes to prevent blocking, bringing configuration save times down from ~17s to under 1s. I also developed and refactored various SQL functions to improve data quality and retrieval speeds across the platform.",
+
+      "Worked on Pallet Vision, an analytics application tracking production across multiple pallet manufacturing facilities. Diagnosed and fixed a critical performance bottleneck, cutting configuration save latency by 94% (~17s down to under 1s) by decoupling blocking backend processes. Migrated legacy authentication to SSO, refactoring the auth flow and middleware for better security and reliability. Built automated alerting pipelines for live production data, including inactivity detection and scheduled health reports. Integrated webhook-based data exchange with business partners for real-time updates. Wrote SQL-based preprocessing functions to turn raw edge-server telemetry into structured, analyzable data.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Ant Design", "Supabase", "Clerk", "Vercel"],
     certificate: "https://drive.google.com/file/d/18gMRxz1vNTvph1VsP9tT3o4PY_4_t9Cl/view?usp=sharing",
   },
@@ -26,7 +27,7 @@ const experiences: Experience[] = [
     role: "Web Developer Intern",
     timeline: "May 2025 - Aug 2025",
     contributions:
-      "Built a web platform for Ishna Playschool under Shiransh Ventures Pvt. Ltd. to modernize their information delivery and enrollment systems. I took full ownership of the project, engineering a structured interface to communicate the school's mission while automating their manual inquiry and admission workflows, following the agile methodology during the development process. My focus was on transforming a traditional administrative process into a streamlined digital experience that simplified operations for both the staff and parents.",
+      "Built and deployed an end-to-end client-facing preschool web platform (React, TypeScript, Vite, Tailwind CSS), owning the project from requirements to production. Designed a multi-section admissions workflow with form validation and document handling, streamlining student onboarding end-to-end. Integrated Firebase (Auth, Firestore, Cloud Storage) for secure enquiry submission, data persistence, and file uploads across a responsive multi-page app with reusable components.",
     techStack: ["React.js", "TypeScript", "Tailwind CSS", "Firebase","Git"],
     certificate: "https://drive.google.com/file/d/1I64tY8fj2xN9fcgW44e98N0BBNFq_Rsy/view?usp=sharing",
   },
@@ -65,7 +66,7 @@ export default function Timeline() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 mb-4">
-            Work & Experience
+            My Work & Experience
           </h2>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
             My journey through technology and innovation
