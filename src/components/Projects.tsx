@@ -25,18 +25,9 @@ const projects: Project[] = [
     title: "LLM Observability Platform",
     description: "An observability platform that monitors LLM token consumption across applications using a custom npm wrapper library. Tracks usage metrics across multiple dimensions- per feature, per user, and per provider- enabling granular cost and performance analysis. Implements time-series token usage dashboards, giving teams visibility into usage trends and anomalies over time. Mirrors core infrastructure monitoring principles: instrumentation, metric collection, multi-dimensional aggregation, and reporting.",
     timeline: "April 2026",
-    techStack:["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "SQL","npm"],
-    githubUrl:[],
-  },
-  {
-    title: "Portfolio",
-    description:
-      "A modern, responsive portfolio website built with Next.js and TypeScript, featuring smooth animations and an elegant dark theme.",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    timeline: "Jan 2026",
-    githubUrl: ["https://github.com/AvyayNayakSujir/Portfolio"],
-    liveUrl: "https://www.avyaynayaksujir.me",
-  },
+    techStack:["Next.js", "TypeScript", "Tailwind CSS", "Clerk (Auth)","Supabase", "SQL","npm"],
+    githubUrl:["https://github.com/AvyayNayakSujir/llm-observability"],
+  }
 ];
 
 export default function Projects() {
@@ -72,11 +63,8 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 mb-4">
-            Projects
+            My Projects
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            Building solutions that make a difference
-          </p>
         </div>
 
         {/* Projects Grid */}

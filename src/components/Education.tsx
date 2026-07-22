@@ -23,7 +23,7 @@ const education: EducationItem[] = [
     degree: "Bachelor of Technology",
     field: "Information Science & Engineering",
     timeline: "2026",
-    gpa: "8.8/10",
+    gpa: "8.92/10",
   },
 ];
 

@@ -19,7 +19,7 @@ const experiences: Experience[] = [
     contributions:
 
       "Worked on Pallet Vision, an analytics application tracking production across multiple pallet manufacturing facilities. Diagnosed and fixed a critical performance bottleneck, cutting configuration save latency by 94% (~17s down to under 1s) by decoupling blocking backend processes. Migrated legacy authentication to SSO, refactoring the auth flow and middleware for better security and reliability. Built automated alerting pipelines for live production data, including inactivity detection and scheduled health reports. Integrated webhook-based data exchange with business partners for real-time updates. Wrote SQL-based preprocessing functions to turn raw edge-server telemetry into structured, analyzable data.",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Ant Design", "Supabase", "Clerk", "Vercel"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Ant Design", "Supabase", "Clerk (Auth)", "Vercel"],
     certificate: "https://drive.google.com/file/d/18gMRxz1vNTvph1VsP9tT3o4PY_4_t9Cl/view?usp=sharing",
   },
   {
