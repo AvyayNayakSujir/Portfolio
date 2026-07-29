@@ -100,7 +100,7 @@ export default function Home() {
             {/* Description */}
             <div className={`space-y-4 max-w-2xl transition-all duration-1000 delay-1800 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <p className="text-lg sm:text-xl md:text-2xl text-zinc-300 leading-relaxed">
-                I build fullstack applications, and I care about owning them end-to-end. From planning how something ships, to making sure it's built the right way (clean architecture, proper testing, CI/CD, whatever the project actually needs).<br/>I'm pretty great at debugging and root cause analysis. I'm especially good at taking control over someone else's code and figuring out how it actually works.
+                I build fullstack applications, and I care about owning them end-to-end. From planning how something ships, to making sure it's built the right way (clean architecture, proper testing, CI/CD, whatever the project actually needs). I've been spending my time recently building projects around AI: retrieval, evaluation, multi-agent systems. I'm pretty great at debugging and root cause analysis. I'm especially good at taking control over someone else's code and figuring out how it actually works.
               </p>
               {/* Social Icons - Mobile Only */}
               <div className="flex md:hidden justify-start gap-4 pt-6">
